@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehber Uygulaması</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/1f7c657b3e.js" crossorigin="anonymous"></script>
+
+
+<body>
+    <div class="headerBox">
+        <h1>Rehber Uygulaması</h1>
+
+    </div>
+    <div class="formBox">
+        <h2 class="kisiBasligi">Kişi Ekle</h2>
+        <form id="rehberForm">
+            <label for="firstName">Ad:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName"> Soyad:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="phoneNumber"> Telefon Numarası:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+            <button type="submit" class="ekleBtn">Ekle/Güncelle</button>
+            <i class="fa-solid fa-address-book fa-bounce fa-2xl"></i>
+
+            <input type="hidden" id="personId" name="personId">
+        </form>
+
+    </div>
+    <hr>
+    <div class="tableBox">
+
+        <button id="getButton" class="listeleBtn">REHBERİ LİSTLE</button>
+
+        <table id="dataTable" border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Ad</th>
+                    <th>Soyad</th>
+                    <th>Telefon Numarası</th>
+                    <th>Düzenle</th>
+                    <th>Sil</th>
+                    <!-- Diğer kolonlar eklenebilir -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- GET isteği sonucu buraya eklenecek -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
